@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Shrujal Shah</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <style>
+    #homeBanner {
+      width: 100%;
+    }
+    
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .banner {
+      display: block;
+      width: 100%;
+    }
+    
+    #qrcode {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #map2 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 320px;
+      height: 320px;
+    }
+    
+    
+    #seprator{
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 1em 0;
+      padding: 0; 
+    }
+    
+    #resume{
+      width: 100%;
+    }
+    
+    .resume-card{
+      margin-top: 3%;
+      margin-bottom: 3%;
+      margin-left: 3%;
+      margin-right: 3%;
+      width: -WEBKIT-FILL-AVAILABLE;
+      height: 100%;
+      background-color: rgb(240, 240, 240);
+      border-radius: 4px;
+      border: 5px;
+      padding: 12px;
+      text-decoration-color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      box-shadow: 0px 0px 10px 0px rgba(190,190,190,1);   
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(190,190,190,1);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(190,190,190,1);
+      
+      /* box-shadow: 0px 0px 11px 0px rgba(150,150,150,1);   
+      -webkit-box-shadow: 0px 0px 11px 0px rgba(150,150,150,1);
+      -moz-box-shadow: 0px 0px 11px 0px rgba(150,150,150,1); */
+      
+    }
+    
+    .resume-experience-card{
+      width: -WEBKIT-FILL-AVAILABLE;
+      height: 100%;
+      border: 5px;
+      padding: 12px;
+    }
+    
+    .resume-skills{
+      width: -WEBKIT-FILL-AVAILABLE;
+      height: 100%;
+      border: 5px;
+      padding: 12px;      
+    }
+    
+    .resume-section{
+      font-size: 20px;
+      -webkit-margin-after: 0.500em;
+      -webkit-margin-before: 0.500em;
+    }
+    
+    #head-area{
+      text-align: center;
+    }
+    
+    #resume #head-area #text_name{
+      font-size: 24px;
+    }
+    
+    #resume #head-area #text_occupation{
+      font-size: 18px;
+    }
+    
+    #resume #head-area #text_contact{
+      font-size: 16px;
+      color: rgb(82, 82, 82);
+      display: inline-block;
+      font-weight: normal;
+      text-decoration: none;
+    }
+    
+    #resume #head-area #text_area{
+      font-size: 16px;
+      color: rgb(82, 82, 82);
+    }
+    
+    #resume #text_quote{
+      font-size: 14px;
+      color: rgb(117, 117, 117);      
+    }
+    
+    #exeperience{
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    
+    #exeperience #company_thumbnail{
+      float: left;
+      width: 65px;
+      height: 65px;
+    }
+    
+    #exeperience #company_details{
+      float: unset;
+      padding-left: 77px;
+      width: 70%;
+      height: 100%;
+    }
+    
+    #exeperience #company_details #company_name{
+      font-size: 14px;
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      margin-top: 0.075em;
+    }
+    
+    #exeperience #company_details #company_description{
+      font-size: 12px;
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      margin-top: 0.300em;
+    }
+    
+    #skills_table_data{
+      padding: 12px;
+    }
+    
+    #skills-item{
+      background: rgb(214, 223, 240);
+      border-radius: 20px;
+      border: 1px;
+      padding: 8px;
+      font-size: 14px;
+    }
+    
+    #accomplishments{
+      padding: 24px; 
+    }
+    
+    #accomplishments #item{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    
+    #accomplishments #item #item-count{
+      display: inline-block;
+      text-align: center;
+      font-size: 28px;
+      padding: 8px;
+      color: #0084bf;
+    }
+    
+    #accomplishments #item #item-container{
+      display: inline-block;
+      width: 76%;
+    }
+    
+    
+    #accomplishments #item #item-container #item-title{
+      font-size: 14px;
+      color: #0084bf;
+    }
+    
+    #accomplishments #item #item-container #item-description{
+      font-size: 12px;
+      color: rgb(117, 117, 117);
+      margin-top: 0.300em;
+    }
+    
+    
+    
+  </style>
+</head>
+
+<body>
+  <div id="resume" data-role="page">
+    <!-- head area -->
+    <div id="head-area" class="resume-card">
+      <div id="about-me">
+        <p id="text_name">Shrujal Shah</p>
+        <p id="text_occupation">Software Developer</p>
+        <a id="text_contact" style="display: inlne-block;" href="tel:+919033065685">9033065685</a>
+        <span style="display: inlne-block;"> • </span> 
+        <a id="text_contact" style="display: inlne-block;" href="mailto:shrujalshah@ymail.com">shrujalshah@ymail.com</a>
+        <p id="text_area">Ahmedabad, India</p>  
+      </div>
+      
+      <hr id="seprator"/>
+      
+      <p id="text_quote">"Enthusiastic about taking new challenges and seeking innovation"</p>
+    </div>
+    
+    <!-- experience -->
+    <div id="experience-area" class="resume-card">
+      <div class="resume-experience-card">
+        <p class="resume-section">Experience</p>
+        <div id="exeperience">            
+          <div id="company_thumbnail">
+            <img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAhZAAAAJGFlY2Q2MWNkLTMwNWItNGU4MC04NWZmLWRhNTE0ZDc4ZDI0OQ.png" alt="iView labs" width="100%" height="100%" style="vertical-align: -webkit-baseline-middle; "></img>
+          </div>
+          
+          <div id="company_details">
+            <b style="font-size: 16px;">Software Developer</b>
+            <p id="company_name">iView Labs Pvt Ltd</p>
+            <p id="company_description">Jun 2016 - Present • 1 yr 10 mos</p>
+          </div>
+        </div>
+        
+        <div id="exeperience">            
+          <div id="company_thumbnail">
+            <img src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/5/005/070/046/0d7511a.png" id="company_logo" alt="Tops Technology" width="100%" height="100%" align="middle" style="vertical-align: -webkit-baseline-middle;"></img>
+          </div>
+          
+          <div id="company_details">
+            <b style="font-size: 16px;">Trainee</b>
+            <p id="company_name">Tops Technology</p>
+            <p id="company_description">Jun 2015 - May 2016 • 1 yr</p>
+          </div>
+        </div>
+        
+        <hr id="seprator"/>
+        
+        <p class="resume-section">Education</p>
+        
+        <div id="exeperience">            
+          <div id="company_thumbnail">
+            <img src="img/siter.jpg" alt="SITER" width="100%" height="100%" style="vertical-align: -webkit-baseline-middle; "></img>
+          </div>
+          
+          <div id="company_details">
+            <b style="font-size: 16px;">Sal Institute and Technology and Research Center</b>
+            <p id="company_name">B.E, Computer Engineering</p>
+            <p id="company_description">2012 - 2016 • 7.32 CGPA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Skills -->
+    <div id="skills" class="resume-card">
+      <div class="resume-skills">
+        <p class="resume-section">Skills</p>
+        
+        <!-- Skill table -->
+        <table>
+          <tr>
+            <td id="skills_table_data"><b id="skills-item">JavaScript</b></td>
+            <td id="skills_table_data"><b id="skills-item">Node.js</b></td>
+          </tr>
+          <tr>
+            <td id="skills_table_data"><b id="skills-item">Python</b></td>
+            <td id="skills_table_data"><b id="skills-item">Django</b></td>                                        
+          </tr>
+          <tr>
+            <td id="skills_table_data"><b id="skills-item">Angular</b></td>                    
+            <td id="skills_table_data"><b id="skills-item">MongoDB</b></td>                    
+          </tr>
+          
+        </table>
+        
+        <p style="font-size: 14px; color: rgb(117, 117, 117);">I am also good at...</p>
+        
+        <!-- Skill table -->
+        <table>
+          <tr>
+            <td id="skills_table_data"><b id="skills-item">PHP</b></td>
+          </tr>
+          <tr>
+            <td id="skills_table_data"><b id="skills-item">jQuery</b></td>                    
+          </tr>
+          <tr>
+            <td id="skills_table_data"><b id="skills-item">Bootstrap</b></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <!-- Accomplishments -->
+    <div id="accomplishments" class="resume-card">
+      <p class="resume-section">Accomplishments</p>
+      <div id="item">
+        <div id="item-count">
+          3
+        </div>
+        <div id="item-container">
+          <div id="item-title">
+            <b>Languages</b>
+          </div>
+          <div id="item-description">
+            English • Gujarati • Hindi
+          </div>      
+        </div>
+      </div>
+      
+      <div id="item">
+        <div id="item-count">
+          1
+        </div>
+        <div id="item-container">
+          <div id="item-title">
+            <b>Certification</b>
+          </div>
+          <div id="item-description">
+            Lucideus Certified Cyber Security Expert, Grade 1
+          </div>      
+        </div>
+      </div>
+      
+      <div id="item">
+        <div id="item-count">
+          1
+        </div>
+        <div id="item-container">
+          <div id="item-title">
+            <b>Honor &amp; Award</b>
+          </div>
+          <div id="item-description">
+            Fresher of the year
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
